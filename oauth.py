@@ -12,7 +12,7 @@ toke = url + "oauth/token"
 def reg_app():
     app = {"client_name": "9pub",
            "redirect_uris": "urn:ietf:wg:oauth:2.0:oob",
-           "scopes": ["read", "write"]}
+           "scopes": ["read, write, follow"]}
     app = encode_data(app)
     return http_get(regi, app)
 
